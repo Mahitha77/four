@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Time Table Management System</title>
+<style>
+    /* Updated CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+
+    header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 2rem;
+        display: flex;
+        align-items: flex-start; /* Align items to the top of the header */
+        justify-content: space-between; /* Space between logo, title, and nav */
+    }
+
+    header img {
+        height: 60px;
+        width: auto;
+        margin-right: 1rem; /* Add space between logo and title */
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        flex-grow: 1; /* Pushes the navigation to the right */
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex; /* Horizontal layout for the navigation items */
+        gap: 1.5rem; /* Add space between the items */
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+        background-color: #45a049;
+    }
+
+    section.dashboard {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    section h2 {
+        margin-bottom: 1rem;
+    }
+
+    .roles {
+        margin: 2rem 0;
+    }
+
+    .roles button {
+        padding: 1rem 2rem;
+        margin: 0 1rem;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .roles button:hover {
+        background-color: #45a049;
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+
+    .feature-box {
+        background-color: white;
+        padding: 1.5rem;
+        margin: 1rem;
+        width: 30%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-box h3 {
+        color: #4CAF50;
+        margin-bottom: 0.5rem;
+    }
+
+    .feature-box p {
+        line-height: 1.5;
+    }
+
+    footer {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="College Logo">
+        <h1>College Time Table Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">CreateSchedule</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Attendance</a></li>
+                <li><a href="#">Calendar Integration</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="dashboard">
+        <h2>Welcome to the College Time Table Management System</h2>
+        <p>Select an option from the menu to manage your schedules.</p>
+        <div class="roles">
+            <button>Admin</button>
+            <button>Faculty</button>
+            <button>Student</button>
+        </div>
+
+        <div class="features">
+            <div class="feature-box">
+                <h3>Schedule Creation</h3>
+                <p>Create and edit class schedules easily with our user-friendly interface.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Conflict Resolution</h3>
+                <p>Automatically resolve scheduling conflicts for a smooth timetable.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Announcements</h3>
+                <p>View important announcements related to schedules and updates.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Attendance Tracking</h3>
+                <p>Track student attendance automatically based on the schedule.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Calendar Integration</h3>
+                <p>Sync your schedule with personal calendar applications seamlessly.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 College Time Table Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
